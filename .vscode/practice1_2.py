@@ -1,0 +1,15 @@
+N = int(input())
+
+M = []
+
+for i in range(N) : 
+    M.append(int(input()))
+
+# Bubble Sort
+for i in range(len(M)) : 
+    for j in range(len(M)) : 
+        if M[i] < M[j] : 
+            M[i], M[j] = M[j], M[i]
+            
+for n in M : 
+    print(n)
